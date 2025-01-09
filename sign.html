@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 300px;
+            height: 400px;
+            margin-top: 200px;
+            margin-left:40%;
+            background-color:#fff;
+            box-shadow: 3px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        legend{
+            text-align: center;
+            font-size: 20px;
+        }
+        input{
+            width: 200px;
+            height: 40px;
+            margin-left: 25px;
+            border-radius: 5px;
+            
+        }
+        button{
+           margin-left: 50px;
+           width: 160px;
+           height: 35px;
+           border-radius: 5px;
+           color: aliceblue;
+           background-color: green;
+           margin-top: 30px;
+        }
+        label{
+margin-left: 25px;
+font-size: 20px;
+padding: 2px;
+        }
+        .abhi{
+            margin: 20px;
+        }
+        p{
+            margin-left: 40px;
+        }
+       
+    </style>
+</head>
+<body>
+    <form action="img.html">
+    <fieldset>
+        <legend>SIGN UP</legend>
+        <div class="abhi">
+        <label for="a">Email:</label><br>
+        <input type="email" name="usermail" id="a" placeholder="enter your mail" required pattern="[a-zA-Z0-9.]+@[a-z]+\.[a-z]{2,4}" ><br><br>
+        <label for="b">Username:</label><br>
+        <input type="text" name="username" id="b" placeholder="enter your name"  required pattern="[a-zA-Z]+"> <br><br>
+        <label for="c">Password:</label><br>
+        <input type="password" name="userpassword" id="c"  placeholder="enter your password"  requiredpattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$^]).{8,}"
+><br><br>
+        <button type="submit" value="submit">Sign Up</button>
+        <p>Already have account?<a href="login.html">login</a></p>
+    </div>
+    </fieldset>
+</form>
+</body>
+</html>
